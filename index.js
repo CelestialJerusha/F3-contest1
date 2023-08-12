@@ -35,8 +35,8 @@ async function getSearchResult(searchString){
                                 <p>year:${result.Search[0].Year}</p>
                             </span>
                             <span class="right">
-                                <p>Id:${result.Search[0].Type}</p>
-                                <p>type:${result.Search[0].imdbID}</p>
+                                <p>imdbId:${result.Search[0].imdbID}</p>
+                                <p>Type:${result.Search[0].Type}</p>
                             </span>
                         </div>`
 
