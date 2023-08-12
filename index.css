@@ -35,5 +35,13 @@
     background-color: #3A3F47;
 }
 #container{
-    /* border: 1px solid; */
+    margin: 20px;
+}
+.card{
+    border: 1px solid;
+    width: 30vw;
+}
+.card > .top > img{
+    height: 200px;
+    width: 30vw;
 }

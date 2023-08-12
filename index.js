@@ -1,5 +1,5 @@
 let API_KEY = "b8160c72";
-let baseUrl = `https://www.omdbapi.com`;
+let baseUrl = `https://www.omdbapi.com/`;
 
 /**
  * @param {String} searchString
@@ -27,16 +27,16 @@ async function getSearchResult(searchString){
     let div = document.createElement("div");
     div.className="card";
     div.innerHTML = `<div class="top">
-                            <img src="${result.Poster}" alt="img">
+                            <img src="${result.Search[0].Poster}" alt="img">
                         </div>
                         <div class="bottom">
                             <span class="left">
-                                <p>Matilda</p>
-                                <p>year:1997</p>
+                                <p>${result.Search[0].Title}</p>
+                                <p>year:${result.Search[0].Year}</p>
                             </span>
                             <span class="right">
-                                <p>Id:1254</p>
-                                <p>type:comedy</p>
+                                <p>Id:${result.Search[0].Type}</p>
+                                <p>type:${result.Search[0].imdbID}</p>
                             </span>
                         </div>`
 
