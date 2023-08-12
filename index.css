@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     background-color: #242A32;
+    color: white;
 }
 .heading{
     margin-top: 10px;
@@ -36,9 +37,12 @@
 }
 #container{
     margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 .card{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 30vw;
 }
 .card > .top > img{
